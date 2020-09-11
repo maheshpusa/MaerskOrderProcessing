@@ -5,13 +5,15 @@ VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderProcessor", "OrderProcessor\OrderProcessor.csproj", "{4B408099-BB78-4CE2-B056-39BEAEF9CFF1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderProcessor.BusinessRules", "OrderProcessor.BusinessRules\OrderProcessor.BusinessRules.csproj", "{6B51C709-AFB2-4BB6-98B4-2BE596639C14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderProcessor.BusinessRules", "OrderProcessor.BusinessRules\OrderProcessor.BusinessRules.csproj", "{6B51C709-AFB2-4BB6-98B4-2BE596639C14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderProcessor.Helper", "OrderProcessor.Helper\OrderProcessor.Helper.csproj", "{8D1A6043-FD82-428A-ABE3-069FFF22435F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderProcessor.Helper", "OrderProcessor.Helper\OrderProcessor.Helper.csproj", "{8D1A6043-FD82-428A-ABE3-069FFF22435F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderProcessor.BusinessRules.UnitTests", "OrderProcessor.BusinessRules.UnitTests\OrderProcessor.BusinessRules.UnitTests.csproj", "{CBE1526E-FE0D-43C4-AC7B-5D1E6BB24FC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderProcessor.BusinessRules.UnitTests", "OrderProcessor.BusinessRules.UnitTests\OrderProcessor.BusinessRules.UnitTests.csproj", "{CBE1526E-FE0D-43C4-AC7B-5D1E6BB24FC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderProcessor.Helper.UnitTests", "OrderProcessor.Helper.UnitTests\OrderProcessor.Helper.UnitTests.csproj", "{FBB6A5FB-F12C-4C3B-BEF6-0533D7F5E775}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderProcessor.Helper.UnitTests", "OrderProcessor.Helper.UnitTests\OrderProcessor.Helper.UnitTests.csproj", "{FBB6A5FB-F12C-4C3B-BEF6-0533D7F5E775}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderProcessor.Domain", "OrderProcessor.Domain\OrderProcessor.Domain.csproj", "{46F811BB-DAD9-4ABF-834D-6057A36FD6BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{FBB6A5FB-F12C-4C3B-BEF6-0533D7F5E775}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBB6A5FB-F12C-4C3B-BEF6-0533D7F5E775}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBB6A5FB-F12C-4C3B-BEF6-0533D7F5E775}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46F811BB-DAD9-4ABF-834D-6057A36FD6BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46F811BB-DAD9-4ABF-834D-6057A36FD6BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46F811BB-DAD9-4ABF-834D-6057A36FD6BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46F811BB-DAD9-4ABF-834D-6057A36FD6BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

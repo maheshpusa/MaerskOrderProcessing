@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OrderProcessor.Domain;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -30,6 +31,11 @@ namespace OrderProcessor.BusinessRules.Abstract
         {
             //Here comes the logic for Ugrading membership
             Console.WriteLine("Membership got upgraded");
+        }
+
+        public void SendEmail(string mailid, MemberShipType memberShipType)
+        {
+            //here comesthe logic for sending email
         }
     }
 }
