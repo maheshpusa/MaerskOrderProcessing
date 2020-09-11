@@ -5,7 +5,7 @@ using System.Text;
 
 namespace OrderProcessor.BusinessRules
 {
-    class UpgradeMembershipRule : IProcessOrderRule
+    public class UpgradeMembershipRule : IProcessOrderRule
     {
         public void ProcessOrder()
         {

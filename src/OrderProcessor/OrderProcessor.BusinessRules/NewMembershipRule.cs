@@ -5,7 +5,7 @@ using System.Text;
 
 namespace OrderProcessor.BusinessRules
 {
-    class NewMemberShipRule : IProcessOrderRule
+    public class NewMemberShipRule : IProcessOrderRule
     {
         public void ProcessOrder()
         {

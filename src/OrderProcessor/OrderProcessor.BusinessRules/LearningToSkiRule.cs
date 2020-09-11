@@ -1,10 +1,15 @@
-﻿using System;
+﻿using OrderProcessor.BusinessRules.Abstract;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace OrderProcessor.BusinessRules
 {
-    class LearningToSkiRule
+    public class LearningToSkiRule : IProcessOrderRule
     {
+        public void ProcessOrder()
+        {
+
+        }
     }
 }
