@@ -8,6 +8,8 @@ namespace OrderProcessor.BusinessRules
         public override void ProcessOrder(Customer customer)
         {
             UpgradeMembership(customer);
+
+            SendEmail(customer.Email, MemberShipType.Upgrade);
         }
     }
 }

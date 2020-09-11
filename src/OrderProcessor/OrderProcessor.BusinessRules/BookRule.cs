@@ -9,12 +9,15 @@ namespace OrderProcessor.BusinessRules
     public class BookRule : BaseProductRule, IProcessOrderRule
     {
         public override void ProcessOrder(Customer customer)
-        { 
+        {
+            List<string> productList = new List<string>();
+            productList.Add("Book");
+
             //for customer
-            GeneratePackingSlip(customer);
+            GeneratePackingSlip(customer, productList);
              
             //for royalty
-            GeneratePackingSlip(customer);
+            GeneratePackingSlip(customer, productList);
 
             string agentname = "Mahesh";
             //agent commission

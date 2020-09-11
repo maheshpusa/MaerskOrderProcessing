@@ -9,7 +9,7 @@ namespace OrderProcessor.BusinessRules.Abstract
     {
         public abstract void ProcessOrder( Customer customer);
 
-        public void GeneratePackingSlip(Customer customer)
+        public void GeneratePackingSlip(Customer customer, List<string> productList)
         {
             //Here comes the logic for packing slip.
             Console.WriteLine("Packing Slip Got Generated");

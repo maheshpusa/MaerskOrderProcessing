@@ -9,8 +9,12 @@ namespace OrderProcessor.BusinessRules
     public class PhysicalProductRule : BaseProductRule, IProcessOrderRule
     {
         public override void ProcessOrder(Customer customer)
-        { 
-            GeneratePackingSlip(customer);
+        {
+            List<string> productList = new List<string>();
+            productList.Add("Book");
+
+            //for customer
+            GeneratePackingSlip(customer, productList);
 
             string agentname = "Mahesh";
             GenerateAgentCommission(agentname);

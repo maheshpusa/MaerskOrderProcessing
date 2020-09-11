@@ -10,6 +10,10 @@ namespace OrderProcessor.BusinessRules
     {
         public override void ProcessOrder(Customer customer )
         {
+            List<string> productList = new List<string>();
+            productList.Add("Learning To Ski");
+            productList.Add("First Aid Video");
+
             GeneratePackingSlip(customer);
         }
     }

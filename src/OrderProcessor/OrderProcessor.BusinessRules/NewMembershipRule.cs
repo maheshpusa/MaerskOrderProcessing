@@ -11,6 +11,8 @@ namespace OrderProcessor.BusinessRules
         public override void ProcessOrder(Customer customer)
         {
             ActivateMembership(customer);
+
+            SendEmail(customer.Email, MemberShipType.New);
         }
     }
 }
