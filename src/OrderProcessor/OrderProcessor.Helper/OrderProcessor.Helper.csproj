@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\OrderProcessor.BusinessRules\OrderProcessor.BusinessRules.csproj" />
+  </ItemGroup>
+
 </Project>
