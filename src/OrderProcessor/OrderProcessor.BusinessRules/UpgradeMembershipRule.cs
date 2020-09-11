@@ -1,12 +1,13 @@
 ﻿using OrderProcessor.BusinessRules.Abstract;
+using OrderProcessor.Domain;
 
 namespace OrderProcessor.BusinessRules
 {
-    class UpgradeMembershipRule : BaseProductRule, IProcessOrderRule
+    public class UpgradeMembershipRule : BaseProductRule, IProcessOrderRule
     {
-        public override void ProcessOrder()
+        public override void ProcessOrder(Customer customer)
         {
-            UpgradeMembership();
+            UpgradeMembership(customer);
         }
     }
 }
