@@ -1,20 +1,22 @@
 ﻿using OrderProcessor.BusinessRules.Abstract;
 using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace OrderProcessor.BusinessRules
 {
-    public class BookRule : IProcessOrderRule
+    public class BookRule : BaseProductRule, IProcessOrderRule
     {
-        public new void ProcessOrder()
+        public override void ProcessOrder()
         {
-            var physicalProductRule = new PhysicalProductRule();
             //for customer
-            physicalProductRule.GeneratePackingSlip();
-            //for royalty
-            physicalProductRule.GeneratePackingSlip();
+            GeneratePackingSlip();
 
-            //for agent
-            physicalProductRule.GenerateAgentCommission();
+            //for royalty
+            GeneratePackingSlip();
+
+            //agent commission
+            GenerateAgentCommission();
         }
     }
 }

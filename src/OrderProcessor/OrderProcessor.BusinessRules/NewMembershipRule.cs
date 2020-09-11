@@ -5,16 +5,11 @@ using System.Text;
 
 namespace OrderProcessor.BusinessRules
 {
-    public class NewMemberShipRule : IProcessOrderRule
+    class NewMemberShipRule : BaseProductRule, IProcessOrderRule
     {
-        public void ProcessOrder()
+        public override void ProcessOrder()
         {
             ActivateMembership();
-        }
-
-        private void ActivateMembership()
-        {
-
         }
     }
 }

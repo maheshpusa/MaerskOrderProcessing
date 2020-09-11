@@ -5,11 +5,11 @@ using System.Text;
 
 namespace OrderProcessor.BusinessRules
 {
-    public class LearningToSkiRule : IProcessOrderRule
+    public class LearningToSkiRule : BaseProductRule, IProcessOrderRule
     {
-        public void ProcessOrder()
+        public override void ProcessOrder()
         {
-
+            GeneratePackingSlip();
         }
     }
 }
