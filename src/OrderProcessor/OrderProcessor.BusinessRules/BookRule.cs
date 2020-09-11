@@ -8,11 +8,9 @@ namespace OrderProcessor.BusinessRules
 {
     public class BookRule : BaseProductRule, IProcessOrderRule
     {
-        public override void ProcessOrder(Customer customer)
+        public override void ProcessOrder(Customer customer, List<string> productList)
         {
-            List<string> productList = new List<string>();
-            productList.Add("Book");
-
+            
             //for customer
             GeneratePackingSlip(customer, productList);
              

@@ -7,7 +7,7 @@ namespace OrderProcessor.BusinessRules.Abstract
 {
     public abstract class BaseProductRule : IProcessOrderRule
     {
-        public abstract void ProcessOrder( Customer customer);
+        public abstract void ProcessOrder( Customer customer, List<string> productList);
 
         public void GeneratePackingSlip(Customer customer, List<string> productList)
         {

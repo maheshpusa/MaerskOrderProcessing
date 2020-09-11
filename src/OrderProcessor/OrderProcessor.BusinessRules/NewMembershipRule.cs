@@ -8,7 +8,7 @@ namespace OrderProcessor.BusinessRules
 {
     public class NewMemberShipRule : BaseProductRule, IProcessOrderRule
     {
-        public override void ProcessOrder(Customer customer)
+        public override void ProcessOrder(Customer customer, List<string> productList)
         {
             ActivateMembership(customer);
 

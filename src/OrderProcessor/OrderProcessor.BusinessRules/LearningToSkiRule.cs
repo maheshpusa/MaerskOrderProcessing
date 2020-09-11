@@ -8,13 +8,12 @@ namespace OrderProcessor.BusinessRules
 {
     public class LearningToSkiRule : BaseProductRule, IProcessOrderRule
     {
-        public override void ProcessOrder(Customer customer )
+        public override void ProcessOrder(Customer customer, List<string> productList)
         {
-            List<string> productList = new List<string>();
-            productList.Add("Learning To Ski");
+             
             productList.Add("First Aid Video");
 
-            GeneratePackingSlip(customer);
+            GeneratePackingSlip(customer, productList);
         }
     }
 }

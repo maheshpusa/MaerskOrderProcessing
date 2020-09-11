@@ -20,14 +20,15 @@ namespace OrderProcessor.Helper
             _rules.Add(new UpgradeMembershipRule()); 
         }
 
-        public void processpackage(string prodcutCategory, Customer customer)
+        public void processpackage(string product, Customer customer)
         {
-            prodcutCategory = "OrderProcessor.BusinessRules." + prodcutCategory;
-            //IProcessOrderRule res = (IProcessOrderRule)Activator.CreateInstance("OrderProcessor.BusinessRules", "OrderProcessor.BusinessRules." + prodcutCategory);
-            var rule = _rules.FirstOrDefault(e => e.ToString() == prodcutCategory);
+            product = "OrderProcessor.BusinessRules." + product;            
+            var rule = _rules.FirstOrDefault(e => e.ToString() == product);
 
-            
-            rule.ProcessOrder(customer);
+            List<string> productList = new List<string>();
+            productList.Add(product);
+
+            rule.ProcessOrder(customer, productList);
 
         }
     }
